@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Five Little Peas (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Five_Little_Peas1.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Ivan the Fool (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Little Women (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Mr. Coyote Meets Mr. Snail (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Sun and Moon (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/The Crooked Hyena (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/The Happy Prince (english).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/The Little Match Girl (English).txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_coyote.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_hyena.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_ivan.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_match.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_pea.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_prince.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_sun.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/1_women.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_coyote.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_ivan.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_match.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_pea.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_prince.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_sun.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/stimuli/2_women.txt" charset="GBK" />
+  </component>
+</project>
