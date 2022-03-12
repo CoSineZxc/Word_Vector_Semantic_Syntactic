@@ -4,6 +4,8 @@ import numpy as np
 import scipy.io as scio
 import re
 
+# calculate word vector based on fasttext
+
 # fasttext.util.download_model('en', if_exists='ignore')
 
 # test=0

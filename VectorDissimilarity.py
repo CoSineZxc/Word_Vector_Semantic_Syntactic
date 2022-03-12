@@ -5,6 +5,8 @@ import re
 import scipy.io as scio
 import matplotlib.pyplot as plt
 
+# calculate semantic dissimilarity vector based on fasttext
+
 Language="English"
 vector_dimension=300
 ft_en = fasttext.load_model('D:\Project\Data\\fasttext\\'+Language+'_'+str(vector_dimension)+'.bin')
