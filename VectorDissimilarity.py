@@ -11,7 +11,8 @@ ft_en = fasttext.load_model('D:\Project\Data\\fasttext\\'+Language+'_'+str(vecto
 
 def SemanticDiss(target, context):
     '''
-
+    Create semantic dissimilarity (Pearson's correlation)
+    based on context words and target word
     :param target: target word
     :param context: context words
     :return: Pearson's correlation
@@ -52,7 +53,7 @@ def SemanticDiss(target, context):
 
 def sliding_window(WindowLength,wordlist):
     '''
-
+    Create dissimilarity list based on sliding window methods
     :param window: length of window
     :param segment: paragraph
     :return: 1-corr list
@@ -74,6 +75,7 @@ def sliding_window(WindowLength,wordlist):
 
 def DivideBySentence(segment):
     '''
+
     :param segment: paragraph
     :return: 1-corr list
     '''
