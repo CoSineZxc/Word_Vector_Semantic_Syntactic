@@ -75,13 +75,13 @@ def sliding_window(WindowLength,wordlist):
     subtract_corr_list[0]=sum(subtract_corr_list[1:]) / len(subtract_corr_list[1:])
     return subtract_corr_list
 
-def DivideBySentence(segment):
+def DivideBySentence(wordlist):
     '''
 
     :param segment: paragraph
     :return: 1-corr list
     '''
-    wordlist=segment.split(" ")
+    # wordlist=segment.split(" ")
     subtract_corr_list = []
     SentenceStartFlag=False
     start=0
@@ -114,21 +114,30 @@ def DivideBySentence(segment):
 
 # -------- type1 ---------
 # 5 words sliding window
+
+# rslt_3_1=DivideBySentence(segment1)
+# rslt_1_1=sliding_window(5,segment1)
+
 for i in range(4):
     for j in range(4):
         name=chr(ord('A') + i)+str(j+1)
         print(name)
-        file = open("stimuli\\" + name + ".txt", "r", encoding='gbk')
+        file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
         wordlist = []
         for line in file:
             # line = line.decode()
             # print(line)
             wordlist = wordlist + line.split(' ')
         file.close()
-        result = sliding_window(5, wordlist)
-        mat_path='D:\Project\Data\stimuli_SemanticDissimilarity\\'+name+'.mat'
-        scio.savemat(mat_path, {'WordVec': result, 'wordlist': wordlist})
-
+        result_Sliding5 = sliding_window(5, wordlist)
+        result_Sliding10= sliding_window(10, wordlist)
+        result_sentence=DivideBySentence(wordlist)
+        mat_path_Sliding5='D:\Project\Data\stimuli_SemanticDissimilarity\\'+name+'_Sliding_5.mat'
+        mat_path_Sliding10 = 'D:\Project\Data\stimuli_SemanticDissimilarity\\' + name + '_Sliding_10.mat'
+        mat_path_sentence = 'D:\Project\Data\stimuli_SemanticDissimilarity\\' + name + '_WholeSentence.mat'
+        scio.savemat(mat_path_Sliding5, {'WordVec': result_Sliding5, 'wordlist': wordlist})
+        scio.savemat(mat_path_Sliding10, {'WordVec': result_Sliding10, 'wordlist': wordlist})
+        scio.savemat(mat_path_sentence, {'WordVec': result_sentence, 'wordlist': wordlist})
 
 
 
