@@ -90,6 +90,7 @@ def DivideBySentence(wordlist):
             if re.search("\.|\?|!|;",word)!=None and word!="Mr.":
                 SentenceStartFlag=True
             wordlist[i] = re.sub("\W", "", word)
+            subtract_corr_list.append(1)
             continue
         else:
             if re.search("\.|\?|!|;", word) == None or word=="Mr.":
