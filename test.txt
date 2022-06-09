@@ -1,0 +1,345 @@
+child {
+  child {
+    child {
+      child {
+        child {
+          value: "Su"
+        }
+        value: "NNP"
+      }
+      value: "grup.adv"
+    }
+    value: "sadv"
+  }
+  child {
+    child {
+      value: "mam\303\241"
+    }
+    value: "FW"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "hab\303\255a"
+        }
+        value: "FW"
+      }
+      value: "grup.a"
+    }
+    value: "s.a"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "muerto"
+        }
+        value: "FW"
+      }
+      value: "grup.adv"
+    }
+    value: "sadv"
+  }
+  child {
+    child {
+      value: "hace"
+    }
+    value: "FW"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "muchos"
+        }
+        value: "FW"
+      }
+      value: "grup.nom"
+    }
+    value: "sn"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "a\303\261os"
+        }
+        value: "FW"
+      }
+      value: "grup.nom"
+    }
+    value: "sn"
+  }
+  value: "sentence"
+}
+
+
+child {
+  child {
+    child {
+      child {
+        value: "Mr."
+      }
+      value: "NNP"
+      score: -3.380394458770752
+    }
+    child {
+      child {
+        value: "Coyote"
+      }
+      value: "NNP"
+      score: -12.674307823181152
+    }
+    value: "NP"
+    score: -19.019317626953125
+  }
+  child {
+    child {
+      child {
+        value: "was"
+      }
+      value: "VBD"
+      score: -0.42985981702804565
+    }
+    child {
+      child {
+        child {
+          value: "getting"
+        }
+        value: "VBG"
+        score: -4.239128112792969
+      }
+      child {
+        child {
+          child {
+            value: "very"
+          }
+          value: "RB"
+          score: -2.0135653018951416
+        }
+        child {
+          child {
+            value: "old"
+          }
+          value: "JJ"
+          score: -3.984675168991089
+        }
+        value: "ADJP"
+        score: -7.971793174743652
+      }
+      value: "VP"
+      score: -17.204792022705078
+    }
+    value: "VP"
+    score: -22.50273895263672
+  }
+  value: "S"
+  score: -46.220726013183594
+}
+value: "ROOT"
+score: -46.39210510253906
+
+child {
+  child {
+    child {
+      child {
+        child {
+          value: "Dijo"
+        }
+        value: "NNP"
+      }
+      value: "grup.adv"
+    }
+    value: "sadv"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "la"
+        }
+        value: "NNP"
+      }
+      value: "grup.nom"
+    }
+    value: "sn"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "madrastra"
+        }
+        value: "FW"
+      }
+      value: "grup.adv"
+    }
+    value: "sadv"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "con"
+        }
+        value: "FW"
+      }
+      value: "grup.adv"
+    }
+    value: "sadv"
+  }
+  child {
+    child {
+      value: "desprecio"
+    }
+    value: "FW"
+  }
+  value: "sentence"
+}
+value: "ROOT"
+score: 3761.0
+
+child {
+  child {
+    child {
+      child {
+        value: "Dijo"
+      }
+      value: "VERB"
+    }
+    value: "grup.verb"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "la"
+        }
+        value: "DET"
+      }
+      value: "spec"
+    }
+    child {
+      child {
+        child {
+          value: "madrastra"
+        }
+        value: "NOUN"
+      }
+      value: "grup.nom"
+    }
+    value: "sn"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "con"
+        }
+        value: "ADP"
+      }
+      value: "prep"
+    }
+    child {
+      child {
+        child {
+          child {
+            value: "desprecio"
+          }
+          value: "NOUN"
+        }
+        value: "grup.nom"
+      }
+      value: "sn"
+    }
+    value: "sp"
+  }
+  value: "sentence"
+}
+value: "ROOT"
+score: 9324.75
+
+child {
+  child {
+    child {
+      child {
+        child {
+          value: "El"
+        }
+        value: "DET"
+      }
+      value: "spec"
+    }
+    child {
+      child {
+        child {
+          value: "padre"
+        }
+        value: "NOUN"
+      }
+      value: "grup.nom"
+    }
+    value: "sn"
+  }
+  child {
+    child {
+      child {
+        value: "volvi\303\263"
+      }
+      value: "AUX"
+    }
+    child {
+      child {
+        value: "a"
+      }
+      value: "ADP"
+    }
+    child {
+      child {
+        child {
+          value: "casarse"
+        }
+        value: "VERB"
+      }
+      value: "infinitiu"
+    }
+    value: "grup.verb"
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "con"
+        }
+        value: "ADP"
+      }
+      value: "prep"
+    }
+    child {
+      child {
+        child {
+          child {
+            value: "una"
+          }
+          value: "DET"
+        }
+        value: "spec"
+      }
+      child {
+        child {
+          child {
+            value: "se\303\261ora"
+          }
+          value: "NOUN"
+        }
+        value: "grup.nom"
+      }
+      value: "sn"
+    }
+    value: "sp"
+  }
+  value: "sentence"
+}
+value: "ROOT"
+score: 352.625

@@ -7,10 +7,10 @@ import matplotlib.pyplot as plt
 
 # calculate semantic dissimilarity vector based on fasttext
 
-Language="English"
-vector_dimension=300
-ft_en = fasttext.load_model('D:\Project\Data\\fasttext\\'+Language+'_'+str(vector_dimension)+'.bin')
-
+Language = 'Spanish'
+vector_dimension = 300
+ft_sp = fasttext.load_model('D:\Project\Data\\fasttext\\' +Language+'_'+str(vector_dimension)+'.bin')
+#%%
 def SemanticDiss(target, context):
     '''
     Create semantic dissimilarity (Pearson's correlation)
@@ -19,10 +19,10 @@ def SemanticDiss(target, context):
     :param context: context words
     :return: Pearson's correlation
     '''
-    targetVec=ft_en.get_word_vector(target)
+    targetVec=ft_sp.get_word_vector(target)
     ContextVec = np.zeros(300)
     for word in context:
-        ContextVec+=ft_en.get_word_vector(word)
+        ContextVec+=ft_sp.get_word_vector(word)
     ContextVec/=len(context)
     corr, _ = pearsonr(targetVec, ContextVec)
     return corr
@@ -127,7 +127,7 @@ def DivideBySentence_wrong(wordlist):
     subtract_corr_list[0] = sum(subtract_corr_list[1:]) / len(subtract_corr_list[1:])
     return subtract_corr_list
 
-def DivideBySentence_paragraph(wordlist):
+def DivideBySentence_wrong_paragraph(wordlist):
     '''
 
     :param segment: paragraph
@@ -152,43 +152,36 @@ def check_empty(word):
 
 # -------- type1 ---------
 # 5 words sliding window
-
-# rslt_3_1=DivideBySentence(segment1)
-# rslt_1_1=sliding_window(5,segment1)
-
 for i in range(4):
     for j in range(4):
         name=chr(ord('A') + i)+str(j+1)
         print(name)
-        file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
+        file = open("stimuli_sp\\" + name + ".txt", "r", encoding='utf-8')
         wordlist = []
         for line in file:
             # line = line.decode()
             # print(line)
             wordlist = wordlist + line.split(' ')
         file.close()
-        wordlist_new1 = list(filter(check_empty, wordlist))
+        wordlist_new1=list(filter(check_empty, wordlist))
+        # wordlist_new2=list(filter(check_empty, wordlist))
+        # wordlist_new3=list(filter(check_empty, wordlist))
+
         # result_Sliding5 = sliding_window(5, wordlist_new1)
         # result_Sliding10= sliding_window(10, wordlist_new2)
         # result_sentence = DivideBySentence(wordlist_new3)
         # result_sentence_wrong = DivideBySentence_wrong(wordlist_new1)
-        result_sentence_wrong_paragraph = DivideBySentence_paragraph(wordlist_new1)
+        result_sentence_wrong_paragraph = DivideBySentence_wrong_paragraph(wordlist_new1)
         # mat_path_Sliding5='D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\'+name+'_Sliding_5.mat'
         # mat_path_Sliding10 = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_Sliding_10.mat'
         # mat_path_sentence = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_WholeSentence.mat'
         # mat_path_sentence_wrong = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_WholeSentenceWrong.mat'
-        mat_path_sentence_wrong_paragraph = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp1\\' + name + '_paragraph.mat'
+        mat_path_sentence_wrong_paragraph = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_paragraph.mat'
         # scio.savemat(mat_path_Sliding5, {'WordVec': result_Sliding5, 'wordlist': wordlist_new1})
         # scio.savemat(mat_path_Sliding10, {'WordVec': result_Sliding10, 'wordlist': wordlist_new2})
         # scio.savemat(mat_path_sentence, {'WordVec': result_sentence, 'wordlist': wordlist_new3})
         # scio.savemat(mat_path_sentence_wrong, {'WordVec': result_sentence_wrong, 'wordlist': wordlist_new1})
-        scio.savemat(mat_path_sentence_wrong_paragraph,{'WordVec': result_sentence_wrong_paragraph, 'wordlist': wordlist_new1})
-
-
-
-
-
-
+        scio.savemat(mat_path_sentence_wrong_paragraph, {'WordVec': result_sentence_wrong_paragraph, 'wordlist': wordlist_new1})
 
 # rslt_1_1=sliding_window(5,segment1)
 # rslt_1_2=sliding_window(5,segment2)
