@@ -343,3 +343,150 @@ child {
 }
 value: "ROOT"
 score: 352.625
+
+child {
+  child {
+    child {
+      child {
+        value: "Mr."
+      }
+      value: "NNP"
+      score: -3.380394458770752
+    }
+    child {
+      child {
+        value: "Coyote"
+      }
+      value: "NNP"
+      score: -12.674307823181152
+    }
+    value: "NP"
+    score: -19.019317626953125
+  }
+  child {
+    child {
+      child {
+        value: "was"
+      }
+      value: "VBD"
+      score: -0.42985981702804565
+    }
+    child {
+      child {
+        child {
+          value: "getting"
+        }
+        value: "VBG"
+        score: -4.239128112792969
+      }
+      child {
+        child {
+          child {
+            value: "very"
+          }
+          value: "RB"
+          score: -2.0135653018951416
+        }
+        child {
+          child {
+            value: "old"
+          }
+          value: "JJ"
+          score: -3.984675168991089
+        }
+        value: "ADJP"
+        score: -7.971793174743652
+      }
+      value: "VP"
+      score: -17.204792022705078
+    }
+    value: "VP"
+    score: -22.50273895263672
+  }
+  child {
+    child {
+      value: "."
+    }
+    value: "."
+    score: -0.05752464756369591
+  }
+  value: "S"
+  score: -42.716102600097656
+}
+value: "ROOT"
+score: -42.887481689453125
+
+child {
+  child {
+    child {
+      child {
+        value: "I"
+      }
+      value: "PRP"
+      score: -1.9594900608062744
+    }
+    value: "NP"
+    score: -2.8210573196411133
+  }
+  child {
+    child {
+      child {
+        value: "love"
+      }
+      value: "VBP"
+      score: -5.10294246673584
+    }
+    child {
+      child {
+        child {
+          value: "cat"
+        }
+        value: "NN"
+        score: -9.02377986907959
+      }
+      child {
+        child {
+          value: ","
+        }
+        value: ","
+        score: -0.007049492560327053
+      }
+      child {
+        child {
+          value: "dog"
+        }
+        value: "NN"
+        score: -8.283089637756348
+      }
+      child {
+        child {
+          value: "and"
+        }
+        value: "CC"
+        score: -0.14651738107204437
+      }
+      child {
+        child {
+          value: "mouse"
+        }
+        value: "NN"
+        score: -6.450160503387451
+      }
+      value: "NP"
+      score: -32.71438217163086
+    }
+    value: "VP"
+    score: -42.62720489501953
+  }
+  child {
+    child {
+      value: "."
+    }
+    value: "."
+    score: -0.05752464756369591
+  }
+  value: "S"
+  score: -46.64230728149414
+}
+value: "ROOT"
+score: -46.81368637084961
