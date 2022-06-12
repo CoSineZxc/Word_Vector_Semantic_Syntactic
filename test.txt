@@ -403,13 +403,6 @@ child {
     value: "VP"
     score: -22.50273895263672
   }
-  child {
-    child {
-      value: "."
-    }
-    value: "."
-    score: -0.05752464756369591
-  }
   value: "S"
   score: -42.716102600097656
 }
@@ -490,3 +483,43 @@ child {
 }
 value: "ROOT"
 score: -46.81368637084961
+
+child {
+  child {
+    child {
+      child {
+        value: "Tom"
+      }
+      value: "NNP"
+      score: -7.8225884437561035
+    }
+    value: "NP"
+    score: -10.36418342590332
+  }
+  child {
+    child {
+      child {
+        value: "loves"
+      }
+      value: "VBZ"
+      score: -6.508620738983154
+    }
+    child {
+      child {
+        child {
+          value: "Amy"
+        }
+        value: "NNP"
+        score: -10.678733825683594
+      }
+      value: "NP"
+      score: -14.017480850219727
+    }
+    value: "VP"
+    score: -25.45649528503418
+  }
+  value: "S"
+  score: -40.51934814453125
+}
+value: "ROOT"
+score: -40.69072723388672

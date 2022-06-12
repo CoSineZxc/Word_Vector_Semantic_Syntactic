@@ -36,7 +36,7 @@ from stanza.server import CoreNLPClient
 import os
 corenlp_dir = 'D:\Project\Data\stanza_model'
 os.environ["CORENLP_HOME"] = corenlp_dir
-text = "\"Please, let me out now!\""
+text = "Tom loves Amy"
 with CoreNLPClient(
         properties='English',
         annotators=['parse'],
