@@ -523,3 +523,271 @@ child {
 }
 value: "ROOT"
 score: -40.69072723388672
+
+child {
+  child {
+    child {
+      value: "He"
+    }
+    value: "PRP"
+    score: -3.1612608432769775
+  }
+  value: "NP"
+  score: -4.022828102111816
+}
+child {
+  child {
+    child {
+      value: "had"
+    }
+    value: "VBD"
+    score: -0.027956077829003334
+  }
+  child {
+    child {
+      child {
+        value: "been"
+      }
+      value: "VBN"
+      score: -0.0015304824337363243
+    }
+    child {
+      child {
+        child {
+          value: "walking"
+        }
+        value: "VBG"
+        score: -6.4430928230285645
+      }
+      child {
+        child {
+          child {
+            value: "for"
+          }
+          value: "IN"
+          score: -2.4114840030670166
+        }
+        child {
+          child {
+            child {
+              value: "hours"
+            }
+            value: "NNS"
+            score: -6.094150066375732
+          }
+          child {
+            child {
+              value: "and"
+            }
+            value: "CC"
+            score: -0.14651738107204437
+          }
+          child {
+            child {
+              value: "hours"
+            }
+            value: "NNS"
+            score: -6.094150066375732
+          }
+          value: "NP"
+          score: -18.273954391479492
+        }
+        value: "PP"
+        score: -21.208049774169922
+      }
+      value: "VP"
+      score: -29.784576416015625
+    }
+    value: "VP"
+    score: -34.00639343261719
+  }
+  value: "VP"
+  score: -38.586944580078125
+}
+value: "S"
+score: -47.308441162109375
+
+
+child {
+  child {
+    child {
+      child {
+        value: "He"
+      }
+      value: "PRP"
+      score: -3.1612608432769775
+    }
+    value: "NP"
+    score: -4.022828102111816
+  }
+  child {
+    child {
+      child {
+        value: "had"
+      }
+      value: "VBD"
+      score: -0.027956077829003334
+    }
+    child {
+      child {
+        child {
+          value: "been"
+        }
+        value: "VBN"
+        score: -0.0015304824337363243
+      }
+      child {
+        child {
+          child {
+            value: "walking"
+          }
+          value: "VBG"
+          score: -6.4430928230285645
+        }
+        child {
+          child {
+            child {
+              value: "for"
+            }
+            value: "IN"
+            score: -2.4114840030670166
+          }
+          child {
+            child {
+              child {
+                value: "hours"
+              }
+              value: "NNS"
+              score: -6.094150066375732
+            }
+            child {
+              child {
+                value: "and"
+              }
+              value: "CC"
+              score: -0.14651738107204437
+            }
+            child {
+              child {
+                value: "hours"
+              }
+              value: "NNS"
+              score: -6.094150066375732
+            }
+            value: "NP"
+            score: -18.273954391479492
+          }
+          value: "PP"
+          score: -21.208049774169922
+        }
+        value: "VP"
+        score: -29.784576416015625
+      }
+      value: "VP"
+      score: -34.00639343261719
+    }
+    value: "VP"
+    score: -38.586944580078125
+  }
+  value: "S"
+  score: -47.308441162109375
+}
+value: "ROOT"
+score: -47.479820251464844
+
+
+
+
+child {
+  child {
+    child {
+      child {
+        value: "Bill"
+      }
+      value: "NNP"
+      score: -7.174113750457764
+    }
+    child {
+      child {
+        value: "Gates"
+      }
+      value: "NNP"
+      score: -8.905526161193848
+    }
+    value: "NP"
+    score: -19.04425621032715
+  }
+  child {
+    child {
+      child {
+        value: "met"
+      }
+      value: "VBD"
+      score: -5.835162162780762
+    }
+    child {
+      child {
+        child {
+          value: "two"
+        }
+        value: "CD"
+        score: -2.8148415088653564
+      }
+      child {
+        child {
+          child {
+            value: "very"
+          }
+          value: "RB"
+          score: -2.0135653018951416
+        }
+        child {
+          child {
+            value: "tired"
+          }
+          value: "JJ"
+          score: -6.965724945068359
+        }
+        value: "ADJP"
+        score: -10.651603698730469
+      }
+      child {
+        child {
+          value: "dancers"
+        }
+        value: "NNS"
+        score: -10.166089057922363
+      }
+      value: "NP"
+      score: -30.860488891601562
+    }
+    child {
+      child {
+        child {
+          value: "in"
+        }
+        value: "IN"
+        score: -1.6811728477478027
+      }
+      child {
+        child {
+          child {
+            value: "Cambridge"
+          }
+          value: "NNP"
+          score: -9.128499031066895
+        }
+        value: "NP"
+        score: -11.367170333862305
+      }
+      value: "PP"
+      score: -13.570955276489258
+    }
+    value: "VP"
+    score: -56.811973571777344
+  }
+  value: "S"
+  score: -80.55490112304688
+}
+value: "ROOT"
+score: -80.72628021240234

@@ -21,9 +21,9 @@ os.environ["CORENLP_HOME"] = corenlp_dir
 #         self.value = value
 #         self.ifreal = ifreal
 
-# class Node:
+class Node(object):
 #     '''
-#     tree node
+#     full binary tree node (has either two or no children)
 #     self.parent: parent's number in the list
 #     self.childList: list of children's number in the list
 #     self.value: value
@@ -31,10 +31,11 @@ os.environ["CORENLP_HOME"] = corenlp_dir
 #     self.ifRootNode(): if this node is a root node
 #     self.ifOneChildNode(): is this node only have one child (which can be simplified)
 #     '''
-#     def __init__(self,parent=None,childList=None,value=None):
-#         self.value=value
-#         self.parent=parent
-#         self.childList=childList
+    def __init__(self,value=None,parent=None,lchild=None,rchild=None):
+        self.value=value
+        self.parent=parent
+        self.lchild=lchild
+        self.rchild=rchild
 #
 #     def ifLeafNode(self):
 #         if self.childList==None or self.childList==[]:
@@ -54,69 +55,66 @@ os.environ["CORENLP_HOME"] = corenlp_dir
 #         else:
 #             return False
 
-def Tree2Stack_n_Operations(tree,wordlist):
-    return 0
-#     '''
-#     Every time when "}"goes into the node stack, it should be combined with the
-#     nearest "child{" and the value between them, which means an additional
-#     operation has been done.
-#     Every time a real word goes into the node stack, the length of the stack should
-#     be the number of merged modules +1.
-#     the merged constituent for punctuation should be deleted
-#     :param tree: tree in string version
-#     :param wordlist: wordlist(without punctuation)
-#     :return:
-#     '''
-#     stack_num_list=[]
-#     operation_num_list=[]
-#     tree=tree[1:-1]
-#     node_str_list=re.split(r'\n\s*',tree)
-#     node_stack=[]
-#     for node_str in node_str_list:
-#         if re.match(r'child[{]',node_str)!=None:
-#             node_stack.append(NodeModule(1,None,0))#到这里了
-#     if len(stack_num_list)!=len(operation_num_list):
-#         print("the length of two return list doesn't match")
-#         return 0
-#     if len(stack_num_list)!=len(wordlist):
-#         print("the length of return data doesn't match wordlist")
-#         return 0
-#     return stack_num_list, operation_num_list
+class FullBiTree(object):
+    
 
-def Creat_valuelist_n_wordlist(sentence):
-    return 0
-#     wordlist=[]
-#     tree = sentence.parseTree.child.__str__()
-#     for token in sentence.token:
-#         if re.match(r'\W+',token.originalText)==None:
-#             wordlist.append(token.originalText)
-#     treelist=Tree2Stack_n_Operations(tree,wordlist)
+def Tree2Stack_n_Operations(tree,StackLengthList,OperationsNumList,NodeStack):
+    if re.match(r'\W+',tree.value)!=None:
+        return StackLengthList,OperationsNumList,NodeStack
+    if len(tree.child)!=0:
+        for ChildNode in tree.child:
+            StackLengthList,OperationsNumList,NodeStack=Tree2Stack_n_Operations(ChildNode,StackLengthList,OperationsNumList,NodeStack)
+        NodeStack=NodeStack[0:len(NodeStack)-len(tree.child)]
+        OperationsNumList[-1]+=1
+    else:
+        StackLengthList.append(len(NodeStack)+1)
+        OperationsNumList.append(1)
+    NodeStack.append(tree)
+    return StackLengthList,OperationsNumList,NodeStack
 
-def TreeSimplify():
+def Creat_wordlist(sentence):
+    wordlist=[]
+    for token in sentence.token:
+        if re.match(r'\W+',token.originalText)==None:
+            wordlist.append(token.originalText)
+    return wordlist
+
+def TreeSimplify(sentence):
     '''
     delete all nodes that only have one child node
     :return:
     '''
+    Node=sentence.parseTree
     return 0
 
 def Tree2NumofOpenNode():
     return 0
 
-
-with CoreNLPClient(
-        properties='English',
-        annotators=['parse'],
-        timeout=30000,
-        memory='6G') as client:
-    for i in range(4):
-        for j in range(4):
-            name = chr(ord('A') + i) + str(j + 1)
-            print(name)
-            file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
-            text = file.read()
-            ann = client.annotate(text)
-            for sentence in ann.sentence:
-                Creat_valuelist_n_wordlist(sentence)
-
+if __name__ == "__main__":
+    with CoreNLPClient(
+            properties='English',
+            annotators=['parse'],
+            timeout=30000,
+            memory='6G') as client:
+        text="Bill Gates met two very tired dancers in Cambridge"
+        ann = client.annotate(text)
+        sentence = ann.sentence[0]
+        tree = sentence.parseTree
+        print(tree)
+        # tree = tree.child[0]
+        # StackLengthList, OperationsNumList, NodeStack = Tree2Stack_n_Operations(tree, [], [], [])
+        # for i in range(4):
+        #     for j in range(4):
+        #         name = chr(ord('A') + i) + str(j + 1)
+        #         print(name)
+        #         file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
+        #         text = file.read()
+        #         ann = client.annotate(text)
+        #         for sentence in ann.sentence:
+        #             wordlist=Creat_wordlist(sentence)
+        #             tree = sentence.parseTree
+        #             tree = tree.child[0]
+        #             StackLengthList, OperationsNumList, NodeStack = Tree2Stack_n_Operations(tree, [], [], [])
+        #             OperationsNumList[-1]-=1
 
 
