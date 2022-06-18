@@ -791,3 +791,1923 @@ child {
 }
 value: "ROOT"
 score: -80.72628021240234
+
+
+
+
+child {
+  child {
+    child {
+      child {
+        value: "Bill"
+      }
+      value: "NNP"
+      score: -7.174113750457764
+    }
+    child {
+      child {
+        value: "Gates"
+      }
+      value: "NNP"
+      score: -8.905526161193848
+    }
+    value: "NP"
+    score: -19.04425621032715
+  }
+  child {
+    child {
+      child {
+        value: "met"
+      }
+      value: "VBD"
+      score: -5.835162162780762
+    }
+    child {
+      child {
+        child {
+          value: "two"
+        }
+        value: "CD"
+        score: -2.8148415088653564
+      }
+      child {
+        child {
+          child {
+            value: "very"
+          }
+          value: "RB"
+          score: -2.0135653018951416
+        }
+        child {
+          child {
+            value: "tired"
+          }
+          value: "JJ"
+          score: -6.965724945068359
+        }
+        value: "ADJP"
+        score: -10.651603698730469
+      }
+      child {
+        child {
+          value: "dancers"
+        }
+        value: "NNS"
+        score: -10.166089057922363
+      }
+      value: "NP"
+      score: -30.860488891601562
+    }
+    child {
+      child {
+        child {
+          value: "in"
+        }
+        value: "IN"
+        score: -1.6811728477478027
+      }
+      child {
+        child {
+          child {
+            value: "Dallas"
+          }
+          value: "NNP"
+          score: -7.832345008850098
+        }
+        value: "NP"
+        score: -10.071016311645508
+      }
+      value: "PP"
+      score: -12.274801254272461
+    }
+    value: "VP"
+    score: -55.51582336425781
+  }
+  value: "S"
+  score: -79.25875091552734
+}
+value: "ROOT"
+score: -79.43013000488281
+
+
+
+
+
+child {
+  child {
+    child {
+      child {
+        value: "He"
+      }
+      value: "PRP"
+      score: -3.1612608432769775
+    }
+    value: "NP"
+    score: -4.022828102111816
+  }
+  child {
+    child {
+      child {
+        value: "had"
+      }
+      value: "VBD"
+      score: -0.027956077829003334
+    }
+    child {
+      child {
+        child {
+          value: "been"
+        }
+        value: "VBN"
+        score: -0.0015304824337363243
+      }
+      child {
+        child {
+          child {
+            value: "walking"
+          }
+          value: "VBG"
+          score: -6.4430928230285645
+        }
+        child {
+          child {
+            child {
+              value: "for"
+            }
+            value: "IN"
+            score: -2.4114840030670166
+          }
+          child {
+            child {
+              child {
+                value: "hours"
+              }
+              value: "NNS"
+              score: -6.094150066375732
+            }
+            child {
+              child {
+                value: "and"
+              }
+              value: "CC"
+              score: -0.14651738107204437
+            }
+            child {
+              child {
+                value: "hours"
+              }
+              value: "NNS"
+              score: -6.094150066375732
+            }
+            value: "NP"
+            score: -18.273954391479492
+          }
+          value: "PP"
+          score: -21.208049774169922
+        }
+        child {
+          child {
+            child {
+              value: "through"
+            }
+            value: "IN"
+            score: -4.583841800689697
+          }
+          child {
+            child {
+              child {
+                value: "a"
+              }
+              value: "DT"
+              score: -1.5601264238357544
+            }
+            child {
+              child {
+                value: "beautiful"
+              }
+              value: "JJ"
+              score: -7.726489067077637
+            }
+            child {
+              child {
+                value: "valley"
+              }
+              value: "NN"
+              score: -9.421514511108398
+            }
+            value: "NP"
+            score: -21.787445068359375
+          }
+          value: "PP"
+          score: -26.89389991760254
+        }
+        child {
+          child {
+            value: ","
+          }
+          value: ","
+          score: -0.009032626636326313
+        }
+        child {
+          child {
+            child {
+              child {
+                value: "when"
+              }
+              value: "WRB"
+              score: -0.9610632658004761
+            }
+            value: "WHADVP"
+            score: -1.0175764560699463
+          }
+          child {
+            child {
+              child {
+                child {
+                  value: "he"
+                }
+                value: "PRP"
+                score: -2.3280539512634277
+              }
+              value: "NP"
+              score: -3.1896209716796875
+            }
+            child {
+              child {
+                child {
+                  value: "came"
+                }
+                value: "VBD"
+                score: -4.0650954246521
+              }
+              child {
+                child {
+                  child {
+                    value: "upon"
+                  }
+                  value: "IN"
+                  score: -6.638413429260254
+                }
+                child {
+                  child {
+                    child {
+                      value: "a"
+                    }
+                    value: "DT"
+                    score: -1.5601264238357544
+                  }
+                  child {
+                    child {
+                      child {
+                        value: "very"
+                      }
+                      value: "RB"
+                      score: -2.0135653018951416
+                    }
+                    child {
+                      child {
+                        value: "large"
+                      }
+                      value: "JJ"
+                      score: -5.830841541290283
+                    }
+                    value: "ADJP"
+                    score: -9.516719818115234
+                  }
+                  child {
+                    child {
+                      value: "tree"
+                    }
+                    value: "NN"
+                    score: -8.199707984924316
+                  }
+                  value: "NP"
+                  score: -23.07200050354004
+                }
+                value: "PP"
+                score: -32.03924560546875
+              }
+              value: "VP"
+              score: -40.363677978515625
+            }
+            value: "S"
+            score: -43.88981628417969
+          }
+          value: "SBAR"
+          score: -47.27079772949219
+        }
+        value: "VP"
+        score: -110.70083618164062
+      }
+      value: "VP"
+      score: -114.92265319824219
+    }
+    value: "VP"
+    score: -119.50320434570312
+  }
+  child {
+    child {
+      value: "."
+    }
+    value: "."
+    score: -0.05752464756369591
+  }
+  value: "S"
+  score: -124.72007751464844
+}
+value: "ROOT"
+score: -124.8914566040039
+
+
+
+
+child {
+  child {
+    child {
+      child {
+        value: "Finally"
+      }
+      value: "RB"
+      score: -6.266421318054199
+    }
+    value: "ADVP"
+    score: -6.357396125793457
+  }
+  child {
+    child {
+      value: ","
+    }
+    value: ","
+    score: -0.009144734591245651
+  }
+  child {
+    child {
+      child {
+        value: "Tom"
+      }
+      value: "NNP"
+      score: -7.8225884437561035
+    }
+    value: "NP"
+    score: -10.36418342590332
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "came"
+        }
+        value: "VBD"
+        score: -4.0650954246521
+      }
+      child {
+        child {
+          child {
+            value: "down"
+          }
+          value: "RP"
+          score: -2.476134777069092
+        }
+        value: "PRT"
+        score: -2.506103992462158
+      }
+      value: "VP"
+      score: -11.90679931640625
+    }
+    child {
+      child {
+        value: "and"
+      }
+      value: "CC"
+      score: -0.08472773432731628
+    }
+    child {
+      child {
+        child {
+          value: "pecked"
+        }
+        value: "VBD"
+        score: -12.615833282470703
+      }
+      child {
+        child {
+          child {
+            value: "a"
+          }
+          value: "DT"
+          score: -1.5601264238357544
+        }
+        child {
+          child {
+            value: "hole"
+          }
+          value: "NN"
+          score: -8.712682723999023
+        }
+        value: "NP"
+        score: -12.215709686279297
+      }
+      child {
+        child {
+          child {
+            value: "in"
+          }
+          value: "IN"
+          score: -1.6811728477478027
+        }
+        child {
+          child {
+            child {
+              value: "the"
+            }
+            value: "DT"
+            score: -0.5893322825431824
+          }
+          child {
+            child {
+              value: "tree"
+            }
+            value: "NN"
+            score: -8.199707984924316
+          }
+          value: "NP"
+          score: -10.828181266784668
+        }
+        value: "PP"
+        score: -13.031966209411621
+      }
+      value: "VP"
+      score: -41.24576187133789
+    }
+    value: "VP"
+    score: -57.105384826660156
+  }
+  child {
+    child {
+      value: "."
+    }
+    value: "."
+    score: -0.05752464756369591
+  }
+  value: "S"
+  score: -78.05841827392578
+}
+value: "ROOT"
+score: -78.22979736328125
+
+
+
+child {
+  child {
+    child {
+      value: "Finally"
+    }
+    value: "RB"
+    score: -6.266421318054199
+  }
+  value: "ADVP"
+  score: -6.357396125793457
+}
+child {
+  child {
+    value: ","
+  }
+  value: ","
+  score: -0.009144734591245651
+}
+child {
+  child {
+    child {
+      value: "Tom"
+    }
+    value: "NNP"
+    score: -7.8225884437561035
+  }
+  value: "NP"
+  score: -10.36418342590332
+}
+child {
+  child {
+    child {
+      child {
+        value: "came"
+      }
+      value: "VBD"
+      score: -4.0650954246521
+    }
+    child {
+      child {
+        child {
+          value: "down"
+        }
+        value: "RP"
+        score: -2.476134777069092
+      }
+      value: "PRT"
+      score: -2.506103992462158
+    }
+    value: "VP"
+    score: -11.90679931640625
+  }
+  child {
+    child {
+      value: "and"
+    }
+    value: "CC"
+    score: -0.08472773432731628
+  }
+  child {
+    child {
+      child {
+        value: "pecked"
+      }
+      value: "VBD"
+      score: -12.615833282470703
+    }
+    child {
+      child {
+        child {
+          value: "a"
+        }
+        value: "DT"
+        score: -1.5601264238357544
+      }
+      child {
+        child {
+          value: "hole"
+        }
+        value: "NN"
+        score: -8.712682723999023
+      }
+      value: "NP"
+      score: -12.215709686279297
+    }
+    child {
+      child {
+        child {
+          value: "in"
+        }
+        value: "IN"
+        score: -1.6811728477478027
+      }
+      child {
+        child {
+          child {
+            value: "the"
+          }
+          value: "DT"
+          score: -0.5893322825431824
+        }
+        child {
+          child {
+            value: "tree"
+          }
+          value: "NN"
+          score: -8.199707984924316
+        }
+        value: "NP"
+        score: -10.828181266784668
+      }
+      value: "PP"
+      score: -13.031966209411621
+    }
+    value: "VP"
+    score: -41.24576187133789
+  }
+  value: "VP"
+  score: -57.105384826660156
+}
+child {
+  child {
+    value: "."
+  }
+  value: "."
+  score: -0.05752464756369591
+}
+value: "S"
+score: -78.05841827392578
+
+
+
+child {
+  child {
+    child {
+      value: "He"
+    }
+    value: "PRP"
+    score: -3.1612608432769775
+  }
+  value: "NP"
+  score: -4.022828102111816
+}
+child {
+  child {
+    child {
+      value: "had"
+    }
+    value: "VBD"
+    score: -0.027956077829003334
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "to"
+        }
+        value: "TO"
+        score: -0.01524391956627369
+      }
+      child {
+        child {
+          child {
+            value: "come"
+          }
+          value: "VB"
+          score: -4.49477481842041
+        }
+        child {
+          child {
+            child {
+              value: "up"
+            }
+            value: "RP"
+            score: -1.0983370542526245
+          }
+          value: "PRT"
+          score: -1.128306269645691
+        }
+        child {
+          child {
+            child {
+              value: "with"
+            }
+            value: "IN"
+            score: -2.6043660640716553
+          }
+          child {
+            child {
+              child {
+                value: "a"
+              }
+              value: "DT"
+              score: -1.5601264238357544
+            }
+            child {
+              child {
+                value: "way"
+              }
+              value: "NN"
+              score: -5.4596428871154785
+            }
+            value: "NP"
+            score: -9.058908462524414
+          }
+          value: "PP"
+          score: -12.185887336730957
+        }
+        value: "VP"
+        score: -23.554645538330078
+      }
+      value: "VP"
+      score: -23.600852966308594
+    }
+    value: "S"
+    score: -23.886049270629883
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "to"
+        }
+        value: "TO"
+        score: -0.01524391956627369
+      }
+      child {
+        child {
+          child {
+            value: "escape"
+          }
+          value: "VB"
+          score: -7.303008079528809
+        }
+        value: "VP"
+        score: -10.089103698730469
+      }
+      value: "VP"
+      score: -10.135310173034668
+    }
+    child {
+      child {
+        value: ","
+      }
+      value: ","
+      score: -0.009144734591245651
+    }
+    child {
+      child {
+        child {
+          value: "Since"
+        }
+        value: "IN"
+        score: -3.7231600284576416
+      }
+      child {
+        child {
+          child {
+            child {
+              child {
+                value: "Mr."
+              }
+              value: "NNP"
+              score: -3.380394458770752
+            }
+            child {
+              child {
+                value: "Woodpecker"
+              }
+              value: "NNP"
+              score: -12.597381591796875
+            }
+            child {
+              child {
+                value: "\'s"
+              }
+              value: "POS"
+              score: -0.3382963538169861
+            }
+            value: "NP"
+            score: -18.265405654907227
+          }
+          child {
+            child {
+              value: "beak"
+            }
+            value: "NN"
+            score: -11.6840181350708
+          }
+          value: "NP"
+          score: -32.40593338012695
+        }
+        child {
+          child {
+            child {
+              value: "was"
+            }
+            value: "VBD"
+            score: -0.42985981702804565
+          }
+          child {
+            child {
+              child {
+                value: "now"
+              }
+              value: "RB"
+              score: -3.283078908920288
+            }
+            value: "ADVP"
+            score: -3.5260891914367676
+          }
+          child {
+            child {
+              child {
+                value: "bent"
+              }
+              value: "JJ"
+              score: -8.938810348510742
+            }
+            value: "ADJP"
+            score: -9.642696380615234
+          }
+          value: "VP"
+          score: -21.20545196533203
+        }
+        value: "S"
+        score: -56.69382858276367
+      }
+      value: "SBAR"
+      score: -60.88148498535156
+    }
+    value: "S"
+    score: -77.28933715820312
+  }
+  value: "VP"
+  score: -112.63151550292969
+}
+child {
+  child {
+    value: "."
+  }
+  value: "."
+  score: -0.05752464756369591
+}
+value: "S"
+score: -117.848388671875
+
+
+
+child {
+  child {
+    value: "\""
+  }
+  value: "``"
+  score: -1.4246848821640015
+}
+child {
+  child {
+    child {
+      value: "All"
+    }
+    value: "DT"
+    score: -3.004782199859619
+  }
+  child {
+    child {
+      value: "right"
+    }
+    value: "RB"
+    score: -4.025189399719238
+  }
+  child {
+    child {
+      value: "then"
+    }
+    value: "RB"
+    score: -5.590175628662109
+  }
+  value: "ADVP"
+  score: -22.21472930908203
+}
+child {
+  child {
+    value: ","
+  }
+  value: ","
+  score: -0.009144734591245651
+}
+child {
+  child {
+    child {
+      value: "I"
+    }
+    value: "PRP"
+    score: -1.9594900608062744
+  }
+  value: "NP"
+  score: -2.8210573196411133
+}
+child {
+  child {
+    child {
+      value: "will"
+    }
+    value: "MD"
+    score: -1.134448528289795
+  }
+  child {
+    child {
+      child {
+        value: "wait"
+      }
+      value: "VB"
+      score: -6.284616470336914
+    }
+    value: "VP"
+    score: -9.070712089538574
+  }
+  value: "VP"
+  score: -12.461560249328613
+}
+child {
+  child {
+    value: "."
+  }
+  value: "."
+  score: -0.05752464756369591
+}
+value: "S"
+score: -48.20298767089844
+
+['Mr.', '.', ',', '"', '!', '“', '”', "n't", "'s", "'ll", '’s', ';', '?', 'n’t', '-', '’ll', '?!', '’m', '…', '’', '’re', '!?', '’ve', '!!!!', "'re"]
+
+
+
+child {
+  child {
+    child {
+      child {
+        value: "I"
+      }
+      value: "PRP"
+      score: -1.9594900608062744
+    }
+    value: "NP"
+    score: -2.8210573196411133
+  }
+  child {
+    child {
+      child {
+        value: "\'ll"
+      }
+      value: "MD"
+      score: -3.7970633506774902
+    }
+    child {
+      child {
+        child {
+          value: "show"
+        }
+        value: "VB"
+        score: -3.8546507358551025
+      }
+      child {
+        child {
+          child {
+            value: "you"
+          }
+          value: "PRP"
+          score: -2.1667263507843018
+        }
+        value: "NP"
+        score: -4.042327404022217
+      }
+      child {
+        child {
+          child {
+            value: "Mr."
+          }
+          value: "NNP"
+          score: -3.380394458770752
+        }
+        child {
+          child {
+            value: "Tree"
+          }
+          value: "NNP"
+          score: -12.485434532165527
+        }
+        value: "NP"
+        score: -20.14163589477539
+      }
+      value: "VP"
+      score: -33.82270050048828
+    }
+    value: "VP"
+    score: -39.876163482666016
+  }
+  value: "S"
+  score: -43.25872802734375
+}
+child {
+  child {
+    value: ","
+  }
+  value: ","
+  score: -0.009144734591245651
+}
+child {
+  child {
+    child {
+      child {
+        value: "you"
+      }
+      value: "PRP"
+      score: -2.1667263507843018
+    }
+    value: "NP"
+    score: -3.0282936096191406
+  }
+  child {
+    child {
+      child {
+        value: "ca"
+      }
+      value: "MD"
+      score: -3.9267945289611816
+    }
+    child {
+      child {
+        value: "n\'t"
+      }
+      value: "RB"
+      score: -0.8283824324607849
+    }
+    child {
+      child {
+        child {
+          value: "keep"
+        }
+        value: "VB"
+        score: -4.974421501159668
+      }
+      child {
+        child {
+          child {
+            value: "me"
+          }
+          value: "PRP"
+          score: -3.576317310333252
+        }
+        value: "NP"
+        score: -5.451918601989746
+      }
+      child {
+        child {
+          child {
+            value: "in"
+          }
+          value: "IN"
+          score: -1.6811728477478027
+        }
+        child {
+          child {
+            child {
+              value: "here"
+            }
+            value: "RB"
+            score: -3.960855722427368
+          }
+          value: "ADVP"
+          score: -4.213799476623535
+        }
+        value: "PP"
+        score: -11.711043357849121
+      }
+      value: "VP"
+      score: -25.21061134338379
+    }
+    value: "VP"
+    score: -34.23027420043945
+  }
+  value: "S"
+  score: -37.82007598876953
+}
+child {
+  child {
+    value: ","
+  }
+  value: ","
+  score: -0.009144734591245651
+}
+child {
+  child {
+    child {
+      child {
+        value: "he"
+      }
+      value: "PRP"
+      score: -2.3280539512634277
+    }
+    value: "NP"
+    score: -3.1896209716796875
+  }
+  child {
+    child {
+      child {
+        value: "thought"
+      }
+      value: "VBD"
+      score: -5.289748191833496
+    }
+    value: "VP"
+    score: -9.190845489501953
+  }
+  value: "S"
+  score: -12.941975593566895
+}
+child {
+  child {
+    value: "."
+  }
+  value: "."
+  score: -0.05752464756369591
+}
+value: "S"
+score: -102.23504638671875
+
+
+
+
+child {
+  child {
+    child {
+      child {
+        value: "I"
+      }
+      value: "PRP"
+      score: -1.9594900608062744
+    }
+    value: "NP"
+    score: -2.8210573196411133
+  }
+  child {
+    child {
+    }
+    child {
+      child {
+        child {
+          value: "show"
+        }
+        value: "VB"
+        score: -3.8546507358551025
+      }
+      child {
+        child {
+          child {
+            value: "you"
+          }
+          value: "PRP"
+          score: -2.1667263507843018
+        }
+        value: "NP"
+        score: -4.042327404022217
+      }
+      child {
+        child {
+          child {
+            value: "Mr."
+          }
+          value: "NNP"
+          score: -3.380394458770752
+        }
+        child {
+          child {
+            value: "Tree"
+          }
+          value: "NNP"
+          score: -12.485434532165527
+        }
+        value: "NP"
+        score: -20.14163589477539
+      }
+      value: "VP"
+      score: -33.82270050048828
+    }
+    value: "VP"
+    score: -39.876163482666016
+  }
+  value: "S"
+  score: -43.25872802734375
+}
+child {
+}
+child {
+  child {
+    child {
+      child {
+        value: "you"
+      }
+      value: "PRP"
+      score: -2.1667263507843018
+    }
+    value: "NP"
+    score: -3.0282936096191406
+  }
+  child {
+    child {
+      child {
+        value: "ca"
+      }
+      value: "MD"
+      score: -3.9267945289611816
+    }
+    child {
+    }
+    child {
+      child {
+        child {
+          value: "keep"
+        }
+        value: "VB"
+        score: -4.974421501159668
+      }
+      child {
+        child {
+          child {
+            value: "me"
+          }
+          value: "PRP"
+          score: -3.576317310333252
+        }
+        value: "NP"
+        score: -5.451918601989746
+      }
+      child {
+        child {
+          child {
+            value: "in"
+          }
+          value: "IN"
+          score: -1.6811728477478027
+        }
+        child {
+          child {
+            child {
+              value: "here"
+            }
+            value: "RB"
+            score: -3.960855722427368
+          }
+          value: "ADVP"
+          score: -4.213799476623535
+        }
+        value: "PP"
+        score: -11.711043357849121
+      }
+      value: "VP"
+      score: -25.21061134338379
+    }
+    value: "VP"
+    score: -34.23027420043945
+  }
+  value: "S"
+  score: -37.82007598876953
+}
+child {
+}
+child {
+  child {
+    child {
+      child {
+        value: "he"
+      }
+      value: "PRP"
+      score: -2.3280539512634277
+    }
+    value: "NP"
+    score: -3.1896209716796875
+  }
+  child {
+    child {
+      child {
+        value: "thought"
+      }
+      value: "VBD"
+      score: -5.289748191833496
+    }
+    value: "VP"
+    score: -9.190845489501953
+  }
+  value: "S"
+  score: -12.941975593566895
+}
+child {
+}
+value: "S"
+score: -102.23504638671875
+
+
+
+
+child {
+  child {
+    child {
+      value: "I"
+    }
+    value: "PRP"
+    score: -1.9594900608062744
+  }
+  value: "NP"
+  score: -2.8210573196411133
+}
+child {
+  child {
+    child {
+      value: "will"
+    }
+    value: "MD"
+    score: -1.134448528289795
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "sing"
+        }
+        value: "VB"
+        score: -8.61854362487793
+      }
+      child {
+        child {
+          child {
+            child {
+              value: "you"
+            }
+            value: "PRP"
+            score: -2.1667263507843018
+          }
+          value: "NP"
+          score: -3.0282936096191406
+        }
+        child {
+          child {
+            child {
+              value: "a"
+            }
+            value: "DT"
+            score: -1.5601264238357544
+          }
+          child {
+            child {
+              value: "song"
+            }
+            value: "NN"
+            score: -8.599139213562012
+          }
+          value: "NP"
+          score: -12.558650016784668
+        }
+        value: "S"
+        score: -17.840206146240234
+      }
+      value: "VP"
+      score: -31.963468551635742
+    }
+    child {
+      child {
+        value: "and"
+      }
+      value: "CC"
+      score: -0.08472773432731628
+    }
+    child {
+      child {
+        child {
+          value: "take"
+        }
+        value: "VB"
+        score: -4.0937981605529785
+      }
+      child {
+        child {
+          child {
+            value: "you"
+          }
+          value: "PRP"
+          score: -2.1667263507843018
+        }
+        value: "NP"
+        score: -4.042327404022217
+      }
+      child {
+        child {
+          child {
+            value: "both"
+          }
+          value: "DT"
+          score: -0.499955952167511
+        }
+        child {
+          child {
+            value: "for"
+          }
+          value: "IN"
+          score: -2.4114840030670166
+        }
+        child {
+          child {
+            child {
+              value: "a"
+            }
+            value: "DT"
+            score: -1.5601264238357544
+          }
+          child {
+            child {
+              value: "jungle"
+            }
+            value: "NN"
+            score: -11.264714241027832
+          }
+          child {
+            child {
+              value: "-"
+            }
+            value: "HYPH"
+            score: -0.08133547008037567
+          }
+          child {
+            child {
+              value: "ride"
+            }
+            value: "NN"
+            score: -9.020689010620117
+          }
+          value: "NP"
+          score: -29.560169219970703
+        }
+        value: "PP"
+        score: -41.86562728881836
+      }
+      value: "VP"
+      score: -53.074981689453125
+    }
+    value: "VP"
+    score: -89.02945709228516
+  }
+  value: "VP"
+  score: -92.42030334472656
+}
+child {
+  child {
+    value: "."
+  }
+  value: "."
+  score: -0.05752464756369591
+}
+value: "S"
+score: -96.43540954589844
+
+
+
+
+child {
+  child {
+    child {
+      value: "I"
+    }
+    value: "PRP"
+    score: -1.9594900608062744
+  }
+  value: "NP"
+  score: -2.8210573196411133
+}
+child {
+  child {
+    child {
+      value: "will"
+    }
+    value: "MD"
+    score: -1.134448528289795
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "sing"
+        }
+        value: "VB"
+        score: -8.61854362487793
+      }
+      child {
+        child {
+          child {
+            child {
+              value: "you"
+            }
+            value: "PRP"
+            score: -2.1667263507843018
+          }
+          value: "NP"
+          score: -3.0282936096191406
+        }
+        child {
+          child {
+            child {
+              value: "a"
+            }
+            value: "DT"
+            score: -1.5601264238357544
+          }
+          child {
+            child {
+              value: "song"
+            }
+            value: "NN"
+            score: -8.599139213562012
+          }
+          value: "NP"
+          score: -12.558650016784668
+        }
+        value: "S"
+        score: -17.840206146240234
+      }
+      value: "VP"
+      score: -31.963468551635742
+    }
+    child {
+      child {
+        value: "and"
+      }
+      value: "CC"
+      score: -0.08472773432731628
+    }
+    child {
+      child {
+        child {
+          value: "take"
+        }
+        value: "VB"
+        score: -4.0937981605529785
+      }
+      child {
+        child {
+          child {
+            value: "you"
+          }
+          value: "PRP"
+          score: -2.1667263507843018
+        }
+        value: "NP"
+        score: -4.042327404022217
+      }
+      child {
+        child {
+          child {
+            value: "both"
+          }
+          value: "DT"
+          score: -0.499955952167511
+        }
+        child {
+          child {
+            value: "for"
+          }
+          value: "IN"
+          score: -2.4114840030670166
+        }
+        child {
+          child {
+            child {
+              value: "a"
+            }
+            value: "DT"
+            score: -1.5601264238357544
+          }
+          child {
+            child {
+              value: "jungle"
+            }
+            value: "NN"
+            score: -11.264714241027832
+          }
+          child {
+          }
+          child {
+          }
+          value: "NP"
+          score: -29.560169219970703
+        }
+        value: "PP"
+        score: -41.86562728881836
+      }
+      value: "VP"
+      score: -53.074981689453125
+    }
+    value: "VP"
+    score: -89.02945709228516
+  }
+  value: "VP"
+  score: -92.42030334472656
+}
+child {
+}
+value: "S"
+score: -96.43540954589844
+
+
+
+
+child {
+  child {
+    child {
+      value: "With"
+    }
+    value: "IN"
+    score: -3.939035177230835
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "their"
+        }
+        value: "PRP$"
+        score: -1.6788822412490845
+      }
+      child {
+        child {
+          value: "mother"
+        }
+        value: "NN"
+        score: -7.250369548797607
+      }
+      value: "NP"
+      score: -13.105253219604492
+    }
+    child {
+      child {
+        child {
+          value: "away"
+        }
+        value: "RB"
+        score: -5.086618900299072
+      }
+      value: "ADVP"
+      score: -5.74555778503418
+    }
+    value: "NP"
+    score: -22.909530639648438
+  }
+  value: "PP"
+  score: -29.298133850097656
+}
+child {
+}
+child {
+  child {
+    child {
+      value: "the"
+    }
+    value: "DT"
+    score: -0.5893322825431824
+  }
+  child {
+    child {
+      value: "Hyena"
+    }
+    value: "NNP"
+    score: -12.551128387451172
+  }
+  value: "NP"
+  score: -17.46154022216797
+}
+child {
+  child {
+    child {
+      value: "Found"
+    }
+    value: "VBD"
+    score: -11.46574592590332
+  }
+  child {
+    child {
+      child {
+        value: "that"
+      }
+      value: "DT"
+      score: -4.692002773284912
+    }
+    child {
+      child {
+        child {
+          value: "much"
+        }
+        value: "RB"
+        score: -3.697704553604126
+      }
+      child {
+      }
+      child {
+      }
+      value: "ADJP"
+      score: -12.420601844787598
+    }
+    child {
+      child {
+        value: "opportunity"
+      }
+      value: "NN"
+      score: -7.502569198608398
+    }
+    value: "NP"
+    score: -28.448450088500977
+  }
+  value: "VP"
+  score: -46.437095642089844
+}
+child {
+}
+value: "S"
+score: -96.71037292480469
+
+
+child {
+  child {
+    child {
+      value: "On"
+    }
+    value: "IN"
+    score: -3.351501703262329
+  }
+  child {
+    child {
+      child {
+        child {
+          value: "seeing"
+        }
+        value: "VBG"
+        score: -5.679835796356201
+      }
+      child {
+        child {
+          child {
+            value: "the"
+          }
+          value: "DT"
+          score: -0.5893322825431824
+        }
+        child {
+          child {
+            child {
+              value: "dangerous"
+            }
+            value: "JJ"
+            score: -6.517557621002197
+          }
+          child {
+          }
+          child {
+          }
+          value: "ADJP"
+          score: -18.26766586303711
+        }
+        child {
+          child {
+            value: "Hyena"
+          }
+          value: "NNP"
+          score: -12.551128387451172
+        }
+        child {
+          child {
+            value: "Down"
+          }
+          value: "NNP"
+          score: -10.510577201843262
+        }
+        value: "NP"
+        score: -49.6574821472168
+      }
+      child {
+        child {
+          child {
+            value: "below"
+          }
+          value: "RB"
+          score: -6.769812107086182
+        }
+        value: "ADVP"
+        score: -7.012822151184082
+      }
+      value: "VP"
+      score: -69.96728515625
+    }
+    value: "S"
+    score: -69.97632598876953
+  }
+  value: "PP"
+  score: -75.20121002197266
+}
+child {
+}
+child {
+  child {
+    child {
+      value: "Jackie"
+    }
+    value: "NNP"
+    score: -9.418970108032227
+  }
+  value: "NP"
+  score: -11.960565567016602
+}
+child {
+  child {
+    child {
+      value: "whispered"
+    }
+    value: "VBN"
+    score: -10.039063453674316
+  }
+  value: "VP"
+  score: -11.4458646774292
+}
+child {
+}
+value: "S"
+score: -117.51939392089844
+
+
+
+child {
+  child {
+    child {
+      value: "The"
+    }
+    value: "DT"
+    score: -2.5811824798583984
+  }
+  child {
+    child {
+      value: "Hyena"
+    }
+    value: "NNP"
+    score: -12.551128387451172
+  }
+  value: "NP"
+  score: -19.45339012145996
+}
+child {
+  child {
+    child {
+      value: "realized"
+    }
+    value: "VBD"
+    score: -7.127317428588867
+  }
+  child {
+    child {
+      child {
+        value: "that"
+      }
+      value: "IN"
+      score: -0.6617424488067627
+    }
+    child {
+      child {
+        child {
+          child {
+            value: "his"
+          }
+          value: "PRP$"
+          score: -1.5250909328460693
+        }
+        child {
+          child {
+            child {
+              value: "luring"
+            }
+            value: "VBG"
+            score: -8.785276412963867
+          }
+          child {
+            child {
+              child {
+                value: "the"
+              }
+              value: "DT"
+              score: -0.5893322825431824
+            }
+            child {
+              child {
+                value: "young"
+              }
+              value: "JJ"
+              score: -5.898095607757568
+            }
+            child {
+              child {
+                value: "pandas"
+              }
+              value: "NNS"
+              score: -12.566370964050293
+            }
+            value: "NP"
+            score: -24.04459571838379
+          }
+          value: "VP"
+          score: -34.94198226928711
+        }
+        value: "NP"
+        score: -45.64592361450195
+      }
+      child {
+        child {
+          child {
+            value: "had"
+          }
+          value: "VBD"
+          score: -0.027956077829003334
+        }
+        child {
+          child {
+            child {
+              value: "back"
+            }
+            value: "VB"
+            score: -7.400620460510254
+          }
+          child {
+          }
+          child {
+          }
+          value: "VP"
+          score: -24.965370178222656
+        }
+        value: "VP"
+        score: -29.545923233032227
+      }
+      value: "S"
+      score: -79.0353012084961
+    }
+    value: "SBAR"
+    score: -80.08909606933594
+  }
+  value: "VP"
+  score: -91.40921020507812
+}
+child {
+}
+value: "S"
+score: -112.05664825439453
