@@ -110,6 +110,7 @@ def Tree2Stack_n_Operations(tree,StackLengthList,OperationsNumList,NodeStack):
     else:
         StackLengthList.append(len(NodeStack)+1)
         OperationsNumList.append(1)
+        # print(tree.value,end="$")
     NodeStack.append(tree)
     return StackLengthList,OperationsNumList,NodeStack
 
@@ -118,14 +119,11 @@ def Tree2Stack_n_Operations_final(tree):
     OperationsNumList[-1] -= 1
     return StackLengthList, OperationsNumList
 
-def Creat_wordlist(sentence):   ###需要改
+def Creat_wordlist(sentence):
     wordlist=[]
     for token in sentence.token:
-        wordlist.append(token.originalText)
-        # if re.match(r'\W+',token.originalText)==None or token.originalText=='-':
-        #     wordlist.append(token.originalText)
-        # if re.search(r'\W+',token.originalText)!=None and re.search(r'\w+',token.originalText)!=None:
-        #     print(token.originalText,end=' ')
+        if re.match('\W+$',token.originalText)==None:
+            wordlist.append(token.originalText)
     return wordlist
 
 def CountStackLength_Condition_BiTree(NodeStack,tag):
@@ -233,6 +231,8 @@ def ClearPunctuation(tree,delete_next):
             if tree.value=="-":
                 delete_next=True
             tree.Clear()
+        # else:
+            # print(tree.value,end="$")
     elif len(tree.child)==1:
         tree_no_punc,delete_next=ClearPunctuation(tree.child[0],delete_next)
         tree.child[0].CopyFrom(tree_no_punc)
@@ -249,10 +249,10 @@ def ClearPunctuation(tree,delete_next):
             tree.Clear()
     return tree,delete_next
 
-# def check_empty(word):
-#     if word == '\n' or word=="" or re.match('\W+$',word):
-#           return False
-#     return True
+def check_empty(word):
+    if word == '\n' or word=="" or re.match('\W+$',word):
+          return False
+    return True
 
 if __name__ == "__main__":
     with CoreNLPClient(
@@ -260,15 +260,15 @@ if __name__ == "__main__":
             annotators=['parse'],
             timeout=30000,
             memory='6G') as client:
-        text="The Hyena realized that his luring the young pandas had back-fired."
-        ann = client.annotate(text)
-        sentence = ann.sentence[0]
-        tree = sentence.parseTree
-        tree = tree.child[0]
-        # print(tree)
-        tree_NoPunc,tag=ClearPunctuation(tree,False)
-        print(tree_NoPunc)
-        #
+        # text="I will sing you a song and take you both for a jungle-ride."
+        # ann = client.annotate(text)
+        # sentence = ann.sentence[0]
+        # tree = sentence.parseTree
+        # tree = tree.child[0]
+        # # print(tree)
+        # tree_NoPunc,tag=ClearPunctuation(tree,False)
+        # # print(tree_NoPunc)
+        # #
         # StackLengthList, OperationsNumList = Tree2Stack_n_Operations_final(tree_NoPunc)
         # print(StackLengthList)
         # print(OperationsNumList)
@@ -290,57 +290,67 @@ if __name__ == "__main__":
         # print(Value_BiOpennode)
         # print(Value_OriOpennode)
 
-        # for i in range(4):
-        #     for j in range(4):
-        #         result_bottomup=[]
-        #         result_BiOpennode=[]
-        #         result_OriOpennode=[]
-        #         Wordlist_all=[]
-        #         name = chr(ord('A') + i) + str(j + 1)
-        #         print(name)
-        #         file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
-        #         text = file.read()
-        #         ann = client.annotate(text)
-        #
-        #         for sentence in ann.sentence:
-        #             wordlist=Creat_wordlist(sentence)
-        #             # if name=="B2":
-        #             #     print(wordlist)
-        #             # print(wordlist)
-        #             tree = sentence.parseTree
-        #             tree = tree.child[0]
-        #             StackLengthList, OperationsNumList = Tree2Stack_n_Operations_final(tree)
-        #             VOID = BiNode("fake")
-        #             BiTree = VOID.CreatFromParseTree(tree)
-        #             IndividualWordNumList_Bi, CloseConstituentNumList_Bi, NodeStack2 = BiTree2NumofOpenNode(BiTree, [], [], [])
-        #             IndividualWordNumList_Original, CloseConstituentNumList_Original, NodeStack3 = Tree2NumofOpenNode(tree, [], [], [])
-        #             Value_bottomup=ListCombineOnebyOne(StackLengthList,OperationsNumList)
-        #             Value_BiOpennode=ListCombineOnebyOne(IndividualWordNumList_Bi,CloseConstituentNumList_Bi)
-        #             Value_OriOpennode=ListCombineOnebyOne(IndividualWordNumList_Original,CloseConstituentNumList_Original)
-        #             if len(Value_bottomup)!=len(wordlist) or len(Value_BiOpennode)!=len(wordlist) or len(Value_OriOpennode)!=len(wordlist):
-        #                 print("ERROR:",end=" ")
-        #                 print(wordlist)
-        #                 break
-        #             if Value_BiOpennode!=Value_OriOpennode:
-        #                 print("Your guess is wrong.")
-        #             Wordlist_all+=wordlist
-        #             result_bottomup+=Value_bottomup
-        #             result_BiOpennode+=Value_BiOpennode
-        #             result_OriOpennode+=Value_OriOpennode
-        #         mat_path_bottomup = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_bottomup.mat'
-        #         mat_path_BiOpennode = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_BiOpennode.mat'
-        #         mat_path_OriOpennode = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_OriOpennode.mat'
-        #         # scio.savemat(mat_path_bottomup,
-        #         #              {'WordVec': result_bottomup, 'wordlist': Wordlist_all})
-        #         # scio.savemat(mat_path_BiOpennode,
-        #         #              {'WordVec': result_BiOpennode, 'wordlist': Wordlist_all})
-        #         # scio.savemat(mat_path_OriOpennode,
-        #         #              {'WordVec': result_OriOpennode, 'wordlist': Wordlist_all})
-        #
-        #         ALLWORD+=Wordlist_all
-        # UniList=[]
-        # for word in ALLWORD:
-        #     if re.search(r'\W+',word)!=None and not word in UniList:
-        #         UniList.append(word)
-        # print(UniList)
-        # #     print(token.originalText,end=' ')
+        for i in range(4):
+            for j in range(4):
+                result_bottomup=[]
+                result_BiOpennode=[]
+                result_OriOpennode=[]
+                Wordlist_all=[]
+                name = chr(ord('A') + i) + str(j + 1)
+                print(name)
+                # if name!="B1"and name !="C4"and name!="D1":
+                #     continue
+                file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
+                text = file.read()
+                file.close()
+                ann = client.annotate(text)
+                # allWordFromToken=[]
+                for sentence in ann.sentence:
+                    # wordlist=Creat_wordlist(sentence)
+                    # allWordFromToken+=Creat_wordlist(sentence)
+                    # print(wordlist)
+                    tree = sentence.parseTree
+                    tree = tree.child[0]
+                    tree_NoPunc, tag = ClearPunctuation(tree, False)
+                    StackLengthList, OperationsNumList = Tree2Stack_n_Operations_final(tree_NoPunc)
+                    VOID = BiNode("fake")
+                    BiTree = VOID.CreatFromParseTree(tree_NoPunc)
+                    IndividualWordNumList_Bi, CloseConstituentNumList_Bi, NodeStack2 = BiTree2NumofOpenNode(BiTree, [], [], [])
+                    IndividualWordNumList_Original, CloseConstituentNumList_Original, NodeStack3 = Tree2NumofOpenNode(tree_NoPunc, [], [], [])
+                    Value_bottomup=ListCombineOnebyOne(StackLengthList,OperationsNumList)
+                    Value_BiOpennode=ListCombineOnebyOne(IndividualWordNumList_Bi,CloseConstituentNumList_Bi)
+                    Value_OriOpennode=ListCombineOnebyOne(IndividualWordNumList_Original,CloseConstituentNumList_Original)
+                    # if Value_BiOpennode!=Value_OriOpennode:
+                    #     print("Your guess is wrong.")
+                    # Wordlist_all+=wordlist
+                    result_bottomup+=Value_bottomup
+                    result_BiOpennode+=Value_BiOpennode
+                    result_OriOpennode+=Value_OriOpennode
+                file = open("stimuli_Eng\\" + name + ".txt", "r", encoding='gbk')
+                wordlist_fromsplit=[]
+                for line in file:
+                    wordlist=line.split(' ')
+                    # wordlist_fromsplit+=wordlist
+                    for word in wordlist:
+                        wordlist_fromsplit.append(re.sub(r'\W+','',word))
+                file.close()
+                # wordlist_filtered = list(filter(check_empty, wordlist))
+                # if len(wordlist_filtered)!=len(result_bottomup) or len(wordlist_filtered)!=len(result_BiOpennode) or len(wordlist_filtered) != len(result_OriOpennode):
+                # print("")
+                # print(len(wordlist_fromsplit))
+                # print(len(result_bottomup))
+                if len(wordlist_fromsplit) != len(result_bottomup) or len(wordlist_fromsplit) != len(result_BiOpennode) or len(wordlist_fromsplit) != len(result_OriOpennode):
+                    print("ERROR:"+name)
+                    # print(allWordFromToken)
+                    # for word in wordlist_fromsplit:
+                    #     print(word,end="$")
+
+                mat_path_bottomup = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_bottomup.mat'
+                mat_path_BiOpennode = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_BiOpennode.mat'
+                mat_path_OriOpennode = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_OriOpennode.mat'
+                scio.savemat(mat_path_bottomup,
+                             {'WordVec': result_bottomup, 'wordlist': wordlist_fromsplit})
+                scio.savemat(mat_path_BiOpennode,
+                             {'WordVec': result_BiOpennode, 'wordlist': wordlist_fromsplit})
+                scio.savemat(mat_path_OriOpennode,
+                             {'WordVec': result_OriOpennode, 'wordlist': wordlist_fromsplit})
