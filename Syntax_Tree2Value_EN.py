@@ -338,7 +338,7 @@ if __name__ == "__main__":
                 # if len(wordlist_filtered)!=len(result_bottomup) or len(wordlist_filtered)!=len(result_BiOpennode) or len(wordlist_filtered) != len(result_OriOpennode):
                 # print("")
                 # print(len(wordlist_fromsplit))
-                # print(len(result_bottomup))
+                print(len(result_bottomup))
                 if len(wordlist_fromsplit) != len(result_bottomup) or len(wordlist_fromsplit) != len(result_BiOpennode) or len(wordlist_fromsplit) != len(result_OriOpennode):
                     print("ERROR:"+name)
                     # print(allWordFromToken)
@@ -348,9 +348,9 @@ if __name__ == "__main__":
                 mat_path_bottomup = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_bottomup.mat'
                 mat_path_BiOpennode = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_BiOpennode.mat'
                 mat_path_OriOpennode = 'D:\Project\Data\stimuli_SyntaxComplexity\Exp1\\' + name + '_OriOpennode.mat'
-                scio.savemat(mat_path_bottomup,
-                             {'WordVec': result_bottomup, 'wordlist': wordlist_fromsplit})
-                scio.savemat(mat_path_BiOpennode,
-                             {'WordVec': result_BiOpennode, 'wordlist': wordlist_fromsplit})
-                scio.savemat(mat_path_OriOpennode,
-                             {'WordVec': result_OriOpennode, 'wordlist': wordlist_fromsplit})
+                # scio.savemat(mat_path_bottomup,
+                #              {'WordVec': result_bottomup, 'wordlist': wordlist_fromsplit})
+                # scio.savemat(mat_path_BiOpennode,
+                #              {'WordVec': result_BiOpennode, 'wordlist': wordlist_fromsplit})
+                # scio.savemat(mat_path_OriOpennode,
+                #              {'WordVec': result_OriOpennode, 'wordlist': wordlist_fromsplit})

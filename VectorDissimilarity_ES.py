@@ -163,25 +163,29 @@ for i in range(4):
             # print(line)
             wordlist = wordlist + line.split(' ')
         file.close()
-        wordlist_new1=list(filter(check_empty, wordlist))
+        # wordlist_new1=list(filter(check_empty, wordlist))
         # wordlist_new2=list(filter(check_empty, wordlist))
-        # wordlist_new3=list(filter(check_empty, wordlist))
+        wordlist_new3=list(filter(check_empty, wordlist))
 
         # result_Sliding5 = sliding_window(5, wordlist_new1)
         # result_Sliding10= sliding_window(10, wordlist_new2)
-        # result_sentence = DivideBySentence(wordlist_new3)
+        result_sentence = DivideBySentence(wordlist_new3)
+        # print(len(wordlist_new1))
+        # if len(result_sentence)!=len(wordlist_new1):
+        #     print("ERROR:"+name)
         # result_sentence_wrong = DivideBySentence_wrong(wordlist_new1)
-        result_sentence_wrong_paragraph = DivideBySentence_wrong_paragraph(wordlist_new1)
-        # mat_path_Sliding5='D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\'+name+'_Sliding_5.mat'
-        # mat_path_Sliding10 = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_Sliding_10.mat'
-        # mat_path_sentence = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_WholeSentence.mat'
+        # result_sentence_wrong_paragraph = DivideBySentence_wrong_paragraph(wordlist_new1)
+        mat_path_Sliding5='D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\'+name+'_Sliding_5.mat'
+        mat_path_Sliding10 = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_Sliding_10.mat'
+        mat_path_sentence = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_WholeSentence.mat'
         # mat_path_sentence_wrong = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_WholeSentenceWrong.mat'
-        mat_path_sentence_wrong_paragraph = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_paragraph.mat'
+        # mat_path_sentence_wrong_paragraph = 'D:\Project\Data\stimuli_SemanticDissimilarity\Exp2\\' + name + '_paragraph.mat'
         # scio.savemat(mat_path_Sliding5, {'WordVec': result_Sliding5, 'wordlist': wordlist_new1})
         # scio.savemat(mat_path_Sliding10, {'WordVec': result_Sliding10, 'wordlist': wordlist_new2})
-        # scio.savemat(mat_path_sentence, {'WordVec': result_sentence, 'wordlist': wordlist_new3})
+        scio.savemat(mat_path_sentence, {'WordVec': result_sentence, 'wordlist': wordlist_new3})
         # scio.savemat(mat_path_sentence_wrong, {'WordVec': result_sentence_wrong, 'wordlist': wordlist_new1})
-        scio.savemat(mat_path_sentence_wrong_paragraph, {'WordVec': result_sentence_wrong_paragraph, 'wordlist': wordlist_new1})
+
+        # scio.savemat(mat_path_sentence_wrong_paragraph, {'WordVec': result_sentence_wrong_paragraph, 'wordlist': wordlist_new1})
 
 # rslt_1_1=sliding_window(5,segment1)
 # rslt_1_2=sliding_window(5,segment2)
